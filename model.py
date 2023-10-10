@@ -54,7 +54,7 @@ class Yolov1(nn.Module):
         in_channels = self.in_channels
 
         for x in architecture:
-            if type[x] == tuple:
+            if type(x)== tuple:
                 layers+= [
                     CNNBlock(
                         in_channels, 
